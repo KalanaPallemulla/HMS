@@ -7,7 +7,7 @@ const GroupImages = ({ topic, images }) => {
       <Topic>{topic}</Topic>
       <div className="md:grid md:grid-cols-3 w-screen items-center mt-8 md:px-24">
         {images.map((item) => (
-          <div className="flex justify-center p-4 md:p-8 hover:scale-110 transition">
+          <div className="flex justify-center p-4 md:p-8  hover:scale-110 transition">
             <img
               className="rounded-br-3xl rounded-tl-3xl"
               src={item}
