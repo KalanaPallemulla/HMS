@@ -5,13 +5,15 @@ import Description from "../../components/Texts/Description";
 import { useSelector } from "react-redux";
 import Slider from "./Slider";
 import GroupImages from "./GroupImage";
-import { homeImages } from "../../assets/assets";
+import { homeImages, homeRoomImages } from "../../assets/assets";
+import RoomGroup from "./RoomGroup";
 
 const Home = () => {
   const {
     homeDescriptionText,
-
+    homeFacilitiesText,
     homeWelcomeText,
+    homeFacilitiesDescription,
   } = useSelector((state) => state.homeReducer);
   return (
     <Container>
@@ -23,6 +25,13 @@ const Home = () => {
         </Description>
       </div>
       <GroupImages topic="Gallery" images={homeImages} />
+      <div className="text-center mt-16 flex flex-col  w-screen items-center">
+        <Topic>{homeFacilitiesText}</Topic>
+        <Description styles="mt-8 md:px-96 px-4">
+          {homeFacilitiesDescription}
+        </Description>
+      </div>
+      <RoomGroup topic="Rooms" images={homeRoomImages} />
     </Container>
   );
 };

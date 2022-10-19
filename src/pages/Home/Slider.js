@@ -10,15 +10,10 @@ const Slider = () => {
   );
   return (
     <div className="slide-container">
-      <Fade arrows={false} duration={3000} indicators={true}>
+      <Fade duration={3000} indicators={true}>
         {homeImages.length > 0 &&
           homeImages.map((item, index) => (
             <div key={index} className="w-screen">
-              {/* <img
-                  className="w-screen md:h-screen h-64"
-                  src={item}
-                  alt="Loading..."
-                /> */}
               <div
                 className="w-screen md:h-screen h-64"
                 style={{

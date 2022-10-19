@@ -14,7 +14,12 @@ export const routePath = {
   home: "/",
   login: "/login",
 };
-
+export const email = "dreamworld@live.com";
+export const phoneNumber = "+94 70 527 48 97";
+export const placeholder = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley`;
+export const downloadNow = "Download now";
+export const license = "License";
+export const footerBottomText = "2022 product. All right reserved";
 export const navigationRoutes = [
   {
     name: home,

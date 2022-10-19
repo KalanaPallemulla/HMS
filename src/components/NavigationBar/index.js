@@ -1,6 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { navigationRoutes } from "../../controller/constants";
+import {
+  email,
+  navigationRoutes,
+  phoneNumber,
+} from "../../controller/constants";
 import { hotelName } from "../../controller/constants";
 const NavigationBar = () => {
   const location = useLocation();
@@ -9,10 +13,10 @@ const NavigationBar = () => {
     <div className=" border-b-2 border-b-orange-400 rounded-br-full   backdrop-blur-sm fixed w-screen top-0 z-40">
       <div className="h-8 flex items-center bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 px-8 md:px-36 justify-around rounded-br-full ">
         <div className="font-serif text-gray-200 font-bold text-sm">
-          dreamworld@live.com
+          {email}
         </div>
         <div className="font-serif text-gray-200 font-bold text-sm">
-          +94 070 527 48 97
+          {phoneNumber}
         </div>
       </div>
       <div className="h-20 md:h-16  flex items-center md:px-40">
